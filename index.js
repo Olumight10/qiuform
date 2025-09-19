@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
+    const submitBtn = document.getElementById("submitBtn");
+
+    // Disable button and show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Loading...";
+
+
     const formData = new FormData(form);
     const params = new URLSearchParams();
     for (const pair of formData.entries()) {
