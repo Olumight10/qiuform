@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music & Drama Concert</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logy.png" alt="Logo" class="logo">
+    </div>
+
+    <form id="registrationForm">
+<!--       <h2 class="headboy">Music & Drama Concert</h2> -->
+      <div class="heady">
+        <div class="heady-strip"></div>
+        <div class="heady-content">
+          <!-- Your content like title, inputs, etc -->
+          <h2>Music & Drama Concert</h2>
+          <!-- more content -->
+        </div>
+      </div>
+      
+      <div class="inputer">
+        <label for="name">Name <span class="required">*</span></label>
+        <input type="text" name="name" id="name" placeholder="your answer" required>        
+      </div>
+
+      <div class="inputer">     
+        <label for="phone">Phone/Whatsapp Number <span class="required">*</span></label>
+        <input type="text" name="phone" id="phone" placeholder="your answer" required>
+      </div>
+
+      <div class="inputer">     
+        <label for="company">Gender <span class="required">*</span></label>
+        <input type="text" name="gender" id="gender" placeholder="your answer" required>      
+      </div>
+
+      <div class="inputer">     
+        <label for="designation">Do you attend Discipleship Class? <span class="required">*</span></label>
+        <input type="text" name="attend" id="attend" placeholder="your answer" required>      
+      </div>
+
+      <div class="inputer">     
+        <label for="email">School/Church/Discipleship center (Include location) <span class="required">*</span></label>
+        <input type="text" name="center" id="center" placeholder="your answer" required>
+      </div>      
+      
+
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+        <button type="reset" class="clear-btn">Clear form</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
