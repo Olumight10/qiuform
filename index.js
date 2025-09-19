@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const result = await response.text();
 
       if (result.toLowerCase().includes("success")) {
-        window.location.href = "index.html"; // ✅ Redirect to your own HTML page in the same folder
         alert("✅ Registration Successful")
+        window.location.href = "index.html"; // ✅ Redirect to your own HTML page in the same folder
+        
       } else {
         showError("Form submitted, but something went wrong: " + result);
       }
